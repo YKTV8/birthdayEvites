@@ -1,14 +1,28 @@
 @media screen and (max-width:480px) {
     body{
-        background-position: 55%;
+        color: antiquewhite;
+        background-image: url(./images/z-graphica-aUYcx0CEZW0-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        background-color: yellow;
+        /* background-color: #6060fdb3; */
+    }
+    section{
+        margin-top: 60%;
     }
     main{
         margin: 0%;
     }
     .coverpage{
-        height: 130vh;
+        height: 180vh;
+        background-color: #6060fdb3;
     }
     footer{
+        margin-top: 0%;
+        width: 100%;
         height: 1%;
     }
 }
@@ -32,19 +46,29 @@
         margin: 0%;
     }
 }
-@media screen and (max-width:1680px) {
+@media screen and (min-width:1680px) {
     main{
         margin: 0%;
+        height: 100vh;
+    }
+    body{
+        color: antiquewhite;
+        background-image: url(./images/z-graphica-aUYcx0CEZW0-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        background-color: #6060fdb3;
+    }
+    .coverpage{
+        background-color: #6060fdb3;
     }
 }
 *{
     box-sizing: border-box;
     margin: auto;
     padding: 0%;
-}
-.coverpage{
-    height: 140vh;
-    background-color: #6060fdb3;
 }
 main{
     
@@ -57,12 +81,15 @@ body{
     background-image: url(./images/z-graphica-aUYcx0CEZW0-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
+    background-position: center;
     height: 100%;
-    background-color: #6060fdb3;
-
 }
+/* section{
+    margin-top: 30%;
+} */
 footer{
+
     color: #000000;
     background-color: white;
     height: 5vh;
@@ -86,7 +113,7 @@ article{
     align-items: center;
 }
 form{
-    margin: auto;
+    margin: auto 0;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -158,7 +185,12 @@ article{
     width: 250px;
     position: relative;
     margin: auto;
-    /* background-color: #00ffff49; */
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
 }
 .slideShow{
     display: flex;
