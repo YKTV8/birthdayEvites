@@ -3,7 +3,7 @@
         background-position: 55%;
     }
     main{
-        margin: 5%;
+        margin: 0%;
     }
     .coverpage{
         height: 130vh;
@@ -14,27 +14,27 @@
 }
 @media screen and (max-width:736px) {
     main{
-        margin: 5%;
+        margin: 0%;
     }
 }
 @media screen and (max-width:840px) {
     main{
-        margin: 5%;
+        margin: 0%;
     }
 }
 @media screen and (max-width:980px) {
     main{
-        margin: 5%;
+        margin: 0%;
     }
 }
 @media screen and (max-width:1280px) {
     main{
-        margin: 5%;
+        margin: 0%;
     }
 }
 @media screen and (max-width:1680px) {
     main{
-        margin: 5%;
+        margin: 0%;
     }
 }
 *{
@@ -43,6 +43,7 @@
     padding: 0%;
 }
 .coverpage{
+    height: 140vh;
     background-color: #6060fdb3;
 }
 main{
@@ -57,13 +58,26 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
-    height: 100vh;
+    height: 100%;
+    background-color: #6060fdb3;
 
 }
 footer{
     color: #000000;
     background-color: white;
     height: 5vh;
+}
+.imageBox{
+    border-radius: 15px;
+    height: 300px;
+    width: fit-content;
+    /* border: 4px solid black; */
+}
+.imageBox .imageframe{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 15px;
 }
 article{
     display: flex;
@@ -151,14 +165,24 @@ article{
     position: relative;
     top: 0;
     left: 0;
+    opacity: 1;
+    transition: opacity 3s ease-in;
 }
 .slideShow img{
-    width: 90%;
-    height: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* height: 40%; */
 }
-img{
-    height: 300px;
-}
+.slideShow img:first-child {
+    opacity: 1;
+  }
+  
+  .slideShow img.active {
+    opacity: 1;
+  }
 /* fading animation */
 .fade{
     animation-name: fade;
