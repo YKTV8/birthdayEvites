@@ -307,6 +307,7 @@
         left: 0;
         opacity: 1;
         transition: opacity 3s ease-in;
+        animation: slide 20s infinite;
     }
     .slideShow img{
         border-radius: 50%;
